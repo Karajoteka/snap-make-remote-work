@@ -26,6 +26,7 @@ body {
   flex-direction: column;
   align-items: center;
   position: relative;
+  background-color: $almost-white;
 
   header {
     width: 100%;
@@ -36,11 +37,10 @@ body {
     padding: 15px;
   }
 
-  .dropdown-mobile-menu--container {
+  .dropdown-menu--container {
     width: 100vw;
     height: 100%;
     position: absolute;
-    // z-index: 1;
     background-color: rgba(0, 0, 0, 0.5);
     display: grid;
     grid-template-columns: 35% 65%;
@@ -132,7 +132,6 @@ body {
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
-    // z-index: 0;
   }
 
   .main-info--container {

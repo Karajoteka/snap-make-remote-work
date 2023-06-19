@@ -21,6 +21,7 @@ body {
   flex-direction: column;
   align-items: center;
   position: relative;
+  background-color: hsl(0, 0%, 98%);
 }
 body header {
   width: 100%;
@@ -30,7 +31,7 @@ body header {
   margin-top: 15px;
   padding: 15px;
 }
-body .dropdown-mobile-menu--container {
+body .dropdown-menu--container {
   width: 100vw;
   height: 100%;
   position: absolute;
@@ -38,64 +39,64 @@ body .dropdown-mobile-menu--container {
   display: grid;
   grid-template-columns: 35% 65%;
 }
-body .dropdown-mobile-menu--container .menu-container {
+body .dropdown-menu--container .menu-container {
   grid-column: 2/3;
   background-color: hsl(0, 0%, 98%);
   padding: 25px;
 }
-body .dropdown-mobile-menu--container .menu-container .close-icon {
+body .dropdown-menu--container .menu-container .close-icon {
   display: flex;
   justify-content: flex-end;
 }
-body .dropdown-mobile-menu--container .menu-container ul {
+body .dropdown-menu--container .menu-container ul {
   margin-top: 30px;
   font-size: 1.6rem;
   color: hsl(0, 0%, 41%);
 }
-body .dropdown-mobile-menu--container .menu-container ul li {
+body .dropdown-menu--container .menu-container ul li {
   margin-bottom: 25px;
 }
-body .dropdown-mobile-menu--container .menu-container ul #features {
+body .dropdown-menu--container .menu-container ul #features {
   background-image: url("../images/icon-arrow-down.svg");
   background-size: auto;
   background-position: 90px 5px;
   background-repeat: no-repeat;
 }
-body .dropdown-mobile-menu--container .menu-container ul #features ul {
+body .dropdown-menu--container .menu-container ul #features ul {
   margin-bottom: 40px;
 }
-body .dropdown-mobile-menu--container .menu-container ul #features ul li {
+body .dropdown-menu--container .menu-container ul #features ul li {
   display: flex;
   align-items: center;
 }
-body .dropdown-mobile-menu--container .menu-container ul #features ul li img {
+body .dropdown-menu--container .menu-container ul #features ul li img {
   width: 20px;
   margin-left: 20px;
   margin-right: 15px;
 }
-body .dropdown-mobile-menu--container .menu-container ul #company {
+body .dropdown-menu--container .menu-container ul #company {
   background-image: url("../images/icon-arrow-down.svg");
   background-size: auto;
   background-position: 90px 5px;
   background-repeat: no-repeat;
 }
-body .dropdown-mobile-menu--container .menu-container ul #company ul {
+body .dropdown-menu--container .menu-container ul #company ul {
   margin-bottom: 40px;
   margin-left: 20px;
 }
-body .dropdown-mobile-menu--container .menu-container .sign-up--container {
+body .dropdown-menu--container .menu-container .sign-up--container {
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
-body .dropdown-mobile-menu--container .menu-container .sign-up--container a {
+body .dropdown-menu--container .menu-container .sign-up--container a {
   margin-top: 20px;
   margin-bottom: 15px;
   text-align: center;
   font-size: 1.4rem;
   color: hsl(0, 0%, 41%);
 }
-body .dropdown-mobile-menu--container .menu-container .sign-up--container button {
+body .dropdown-menu--container .menu-container .sign-up--container button {
   width: 100%;
   height: 40px;
   border: 2px solid hsl(0, 0%, 41%);

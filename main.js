@@ -1,10 +1,18 @@
+// Mobile dropdown menu
 const mobileMenuIcon = document.querySelector('.mobile-menu-icon');
-const mobileMenu = document.querySelector('.dropdown-mobile-menu--container');
+const mobileMenu = document.querySelector('.dropdown-menu--container');
 const closeIcon = document.querySelector('.close-icon');
 const features = document.querySelector('#features');
 const featuresDropdown = document.querySelector('#features-dropdown');
 const company = document.querySelector('#company');
 const companyDropdown = document.querySelector('#company-dropdown');
+
+// Desktop navbar
+const featuresDesktop = document.querySelector('.features');
+const featuresDropdownDesktop = document.querySelector('.features-dropdown');
+const companyDesktop = document.querySelector('.company');
+const companyDropdownDesktop = document.querySelector('.company-dropdown');
+
 
 mobileMenuIcon.addEventListener('click', () => {
   mobileMenu.classList.remove('inactive');
@@ -20,4 +28,12 @@ features.addEventListener('click', () => {
 
 company.addEventListener('click', () => {
   companyDropdown.classList.toggle('inactive');
+});
+
+featuresDesktop.addEventListener('click', () => {
+  featuresDropdownDesktop.classList.toggle('inactive');
+});
+
+companyDesktop.addEventListener('click', () => {
+  companyDropdownDesktop.classList.toggle('inactive');
 });

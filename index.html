@@ -9,6 +9,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@500;700&display=swap" rel="stylesheet">
   <link rel="shortcut icon" href="./images/favicon-32x32.png" type="image/x-icon">
   <link rel="stylesheet" href="./css/styles.css">
+  <link rel="stylesheet" href="./css/desktop.css" media="(min-width: 930px)">
   <title>Snap</title>
 </head>
 <body>
@@ -20,9 +21,49 @@
     <div class="mobile-menu">
       <img class="mobile-menu-icon" src="./images/icon-menu.svg" alt="Menu icon">
     </div>
+
+    <div class="navbar inactive">
+      <ul class="dropdown-links">
+        <li class="features">
+          Features
+          <ul class="features-dropdown inactive">
+            <li>
+              <img src="./images/icon-todo.svg" alt="Todo list">
+              Todo List              
+            </li>
+            <li>
+              <img src="./images/icon-calendar.svg" alt="Calendar">
+              Calendar             
+            </li>
+            <li>
+              <img src="./images/icon-reminders.svg" alt="Reminders">
+              Reminders             
+            </li>
+            <li>
+              <img src="./images/icon-planning.svg" alt="Planning">
+              Planning             
+            </li>
+          </ul>
+        </li>
+        <li class="company">
+          Company
+          <ul class="company-dropdown inactive">
+            <li>History</li>
+            <li>Our Team</li>
+            <li>Blog</li>
+          </ul>
+        </li>
+        <li class="careers">Careers</li>
+        <li>About</li>
+      </ul>
+      <div class="sign-up--container">
+        <a href="/">Login</a>
+        <button>Register</button>
+      </div>
+    </div> 
   </header>
 
-  <div class="dropdown-mobile-menu--container inactive">
+  <div class="dropdown-menu--container inactive">
     <div class="menu-container">
       <div class="close-icon">
         <img src="./images/icon-close-menu.svg" alt="Close icon">
