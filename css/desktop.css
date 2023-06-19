@@ -1,0 +1,163 @@
+body {
+  position: relative;
+  z-index: 0;
+  width: 100vw;
+  height: 100vh;
+  display: grid;
+  overflow-y: hidden;
+  overflow-x: hidden;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 10% 80% 10%;
+  grid-template-areas: "nav    nav" "info   image" "footer footer";
+}
+body header {
+  width: 100%;
+  margin-top: 20px;
+  grid-area: nav;
+  align-items: center;
+}
+body header .mobile-menu {
+  display: none;
+}
+body header .navbar {
+  width: 100%;
+  height: 50px;
+  display: grid;
+  grid-area: nav;
+  display: flex;
+  align-items: center;
+}
+body header .navbar .dropdown-links {
+  margin-left: 50px;
+  margin-top: 30px;
+  display: flex;
+  font-size: 1.4rem;
+  color: hsl(0, 0%, 41%);
+}
+body header .navbar .dropdown-links li {
+  margin-right: 30px;
+  cursor: pointer;
+}
+body header .navbar .dropdown-links .features {
+  width: 100px;
+  height: 50px;
+  background-image: url("../images/icon-arrow-down.svg");
+  background-size: auto;
+  background-position: 70px 4px;
+  background-repeat: no-repeat;
+}
+body header .navbar .dropdown-links .features .features-dropdown {
+  position: absolute;
+  left: 55px;
+  width: auto;
+  height: auto;
+  padding: 10px;
+  margin-top: 20px;
+  z-index: 1;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 0 50px 0 grey;
+}
+body header .navbar .dropdown-links .features .features-dropdown li {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+}
+body header .navbar .dropdown-links .features .features-dropdown li img {
+  margin-right: 10px;
+}
+body header .navbar .dropdown-links .company {
+  width: 100px;
+  height: 50px;
+  background-image: url("../images/icon-arrow-down.svg");
+  background-size: auto;
+  background-position: 70px 4px;
+  background-repeat: no-repeat;
+}
+body header .navbar .dropdown-links .company .company-dropdown {
+  position: absolute;
+  left: 275px;
+  width: auto;
+  height: auto;
+  padding: 10px;
+  margin-top: 20px;
+  z-index: 1;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 0 50px 0 grey;
+}
+body header .navbar .dropdown-links .company .company-dropdown li {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+}
+body header .navbar .dropdown-links .company .company-dropdown li img {
+  margin-right: 10px;
+}
+body header .navbar .dropdown-links .careers {
+  margin-right: 50px;
+}
+body header .navbar .sign-up--container {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+body header .navbar .sign-up--container a {
+  margin-right: 30px;
+  text-align: center;
+  font-size: 1.4rem;
+  color: hsl(0, 0%, 41%);
+}
+body header .navbar .sign-up--container button {
+  width: 100px;
+  height: 40px;
+  margin-right: 20px;
+  border: 2px solid hsl(0, 0%, 41%);
+  border-radius: 10px;
+  background-color: hsl(0, 0%, 98%);
+  color: hsl(0, 0%, 41%);
+  font-size: 1.4rem;
+  cursor: pointer;
+}
+body .inactive {
+  display: none;
+}
+body .main-image--container {
+  grid-area: image;
+  width: 100%;
+  height: 90%;
+  margin-left: 50px;
+  background-image: url("../images/image-hero-desktop.png");
+  background-position: left;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+body .main-info--container {
+  grid-area: info;
+  text-align: left;
+  margin-left: 100px;
+}
+body .main-info--container h1 {
+  font-size: 6rem;
+  margin-top: 50px;
+  padding-right: 230px;
+}
+body .main-info--container p {
+  margin-top: 20px;
+  padding-right: 200px;
+}
+body .main-info--container button {
+  margin-top: 20px;
+  align-self: flex-start;
+}
+body .main-info--container button:hover {
+  cursor: pointer;
+  background-color: hsl(0, 0%, 98%);
+  color: hsl(0, 0%, 8%);
+  border: 2px solid hsl(0, 0%, 8%);
+}
+body .main-info--container .partners-container {
+  margin-top: 50px;
+  width: 400px;
+}/*# sourceMappingURL=desktop.css.map */
