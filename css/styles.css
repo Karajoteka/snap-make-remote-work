@@ -30,73 +30,72 @@ body header {
   margin-top: 15px;
   padding: 15px;
 }
-body .dropdown-menu--container {
+body .dropdown-mobile-menu--container {
   width: 100vw;
   height: 100%;
   position: absolute;
-  z-index: 1;
   background-color: rgba(0, 0, 0, 0.5);
   display: grid;
   grid-template-columns: 35% 65%;
 }
-body .dropdown-menu--container .menu-container {
+body .dropdown-mobile-menu--container .menu-container {
   grid-column: 2/3;
   background-color: hsl(0, 0%, 98%);
   padding: 25px;
 }
-body .dropdown-menu--container .menu-container .close-icon {
+body .dropdown-mobile-menu--container .menu-container .close-icon {
   display: flex;
   justify-content: flex-end;
 }
-body .dropdown-menu--container .menu-container ul {
+body .dropdown-mobile-menu--container .menu-container ul {
   margin-top: 30px;
   font-size: 1.6rem;
   color: hsl(0, 0%, 41%);
 }
-body .dropdown-menu--container .menu-container ul li {
+body .dropdown-mobile-menu--container .menu-container ul li {
   margin-bottom: 25px;
 }
-body .dropdown-menu--container .menu-container ul #features {
+body .dropdown-mobile-menu--container .menu-container ul #features {
   background-image: url("../images/icon-arrow-down.svg");
   background-size: auto;
   background-position: 90px 5px;
   background-repeat: no-repeat;
 }
-body .dropdown-menu--container .menu-container ul #features ul {
+body .dropdown-mobile-menu--container .menu-container ul #features ul {
   margin-bottom: 40px;
 }
-body .dropdown-menu--container .menu-container ul #features ul li {
+body .dropdown-mobile-menu--container .menu-container ul #features ul li {
   display: flex;
   align-items: center;
 }
-body .dropdown-menu--container .menu-container ul #features ul li img {
+body .dropdown-mobile-menu--container .menu-container ul #features ul li img {
   width: 20px;
   margin-left: 20px;
   margin-right: 15px;
 }
-body .dropdown-menu--container .menu-container ul #company {
+body .dropdown-mobile-menu--container .menu-container ul #company {
   background-image: url("../images/icon-arrow-down.svg");
   background-size: auto;
   background-position: 90px 5px;
   background-repeat: no-repeat;
 }
-body .dropdown-menu--container .menu-container ul #company ul {
+body .dropdown-mobile-menu--container .menu-container ul #company ul {
   margin-bottom: 40px;
   margin-left: 20px;
 }
-body .dropdown-menu--container .menu-container .sign-up--container {
+body .dropdown-mobile-menu--container .menu-container .sign-up--container {
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
-body .dropdown-menu--container .menu-container .sign-up--container a {
+body .dropdown-mobile-menu--container .menu-container .sign-up--container a {
   margin-top: 20px;
   margin-bottom: 15px;
   text-align: center;
   font-size: 1.4rem;
   color: hsl(0, 0%, 41%);
 }
-body .dropdown-menu--container .menu-container .sign-up--container button {
+body .dropdown-mobile-menu--container .menu-container .sign-up--container button {
   width: 100%;
   height: 40px;
   border: 2px solid hsl(0, 0%, 41%);
@@ -112,7 +111,6 @@ body .main-image--container {
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
-  z-index: 0;
 }
 body .main-info--container {
   display: flex;
@@ -165,4 +163,7 @@ body .main-info--container .partners-container img:nth-child(3) {
 body .main-info--container .partners-container img:nth-child(4) {
   width: 65px;
   height: 20px;
+}
+body .inactive {
+  display: none;
 }/*# sourceMappingURL=styles.css.map */

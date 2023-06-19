@@ -18,11 +18,11 @@
       <img src="./images/logo.svg" alt="Logo">
     </div>
     <div class="mobile-menu">
-      <img src="./images/icon-menu.svg" alt="Menu icon">
+      <img class="mobile-menu-icon" src="./images/icon-menu.svg" alt="Menu icon">
     </div>
   </header>
 
-  <div class="dropdown-menu--container inactive">
+  <div class="dropdown-mobile-menu--container inactive">
     <div class="menu-container">
       <div class="close-icon">
         <img src="./images/icon-close-menu.svg" alt="Close icon">
@@ -30,7 +30,7 @@
       <ul>
         <li id="features">
           Features
-          <ul>
+          <ul id="features-dropdown" class="inactive">
             <li>
               <img src="./images/icon-todo.svg" alt="Todo list">
               Todo List              
@@ -51,7 +51,7 @@
         </li>
         <li id="company">
           Company
-          <ul>
+          <ul id="company-dropdown" class="inactive">
             <li>History</li>
             <li>Our Team</li>
             <li>Blog</li>
@@ -81,5 +81,7 @@
       <img src="./images/client-maker.svg" alt="Maker logo">
     </div>
   </section>
+
+  <script src="./main.js"></script>
 </body>
 </html>
