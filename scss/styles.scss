@@ -25,6 +25,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  position: relative;
 
   header {
     width: 100%;
@@ -35,6 +36,75 @@ body {
     padding: 15px;
   }
 
+  .dropdown-menu--container {
+    width: 100vw;
+    height: 100%;
+    position: absolute;
+    z-index: 1;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: grid;
+    grid-template-columns: 35% 65%;
+
+    .menu-container {
+      grid-column: 2 / 3;
+      background-color: $almost-white;
+      padding: 25px;
+
+      .close-icon {
+        display: flex;
+        justify-content: flex-end;
+      }
+
+      ul {
+        margin-top: 30px;
+        font-size: 1.6rem;
+        color: $medium-grey;
+
+        li {
+          margin-bottom: 25px;
+        }
+
+        li:nth-child(1) {
+          background-image: url('../images/icon-arrow-down.svg');
+          background-size: auto;
+          background-position: center;
+          background-repeat: no-repeat;
+        }
+
+        li:nth-child(2) {
+          background-image: url('../images/icon-arrow-down.svg');
+          background-size: auto;
+          background-position: center;
+          background-repeat: no-repeat;
+        }
+      }
+
+      .sign-up--container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        a {
+          margin-top: 20px;
+          margin-bottom: 15px;
+          text-align: center;
+          font-size: 1.4rem;
+          color: $medium-grey;
+        }
+
+        button {
+          width: 100%;
+          height: 40px;
+          border: 2px solid $medium-grey;
+          border-radius: 10px;
+          background-color: $almost-white;
+          color: $medium-grey;
+          font-size: 1.4rem;
+        }
+      }
+    }
+  }
+
   .main-image--container {
     width: 100%;
     height: 300px;
@@ -42,6 +112,7 @@ body {
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
+    z-index: 0;
   }
 
   .main-info--container {
@@ -105,6 +176,10 @@ body {
       }
     }
   }
+}
+
+.inactive {
+  // display: none;
 }
 
 
