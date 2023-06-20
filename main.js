@@ -24,16 +24,20 @@ closeIcon.addEventListener('click', () => {
 
 features.addEventListener('click', () => {
   featuresDropdown.classList.toggle('inactive');
+  features.classList.toggle('active');
 });
 
 company.addEventListener('click', () => {
   companyDropdown.classList.toggle('inactive');
+  company.classList.toggle('active');
 });
 
 featuresDesktop.addEventListener('click', () => {
   featuresDropdownDesktop.classList.toggle('inactive');
+  featuresDesktop.classList.toggle('active');
 });
 
 companyDesktop.addEventListener('click', () => {
   companyDropdownDesktop.classList.toggle('inactive');
+  companyDesktop.classList.toggle('active');
 });

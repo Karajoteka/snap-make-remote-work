@@ -56,8 +56,11 @@ body .dropdown-menu--container .menu-container ul {
 body .dropdown-menu--container .menu-container ul li {
   margin-bottom: 25px;
 }
-body .dropdown-menu--container .menu-container ul #features {
+body .dropdown-menu--container .menu-container ul #features.active {
   background-image: url("../images/icon-arrow-down.svg");
+}
+body .dropdown-menu--container .menu-container ul #features {
+  background-image: url("../images/icon-arrow-up.svg");
   background-size: auto;
   background-position: 90px 5px;
   background-repeat: no-repeat;
@@ -74,8 +77,11 @@ body .dropdown-menu--container .menu-container ul #features ul li img {
   margin-left: 20px;
   margin-right: 15px;
 }
-body .dropdown-menu--container .menu-container ul #company {
+body .dropdown-menu--container .menu-container ul #company.active {
   background-image: url("../images/icon-arrow-down.svg");
+}
+body .dropdown-menu--container .menu-container ul #company {
+  background-image: url("../images/icon-arrow-up.svg");
   background-size: auto;
   background-position: 90px 5px;
   background-repeat: no-repeat;

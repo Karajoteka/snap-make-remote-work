@@ -47,10 +47,14 @@ body {
           cursor: pointer;
         }
 
+        .features.active {
+          background-image: url('../images/icon-arrow-down.svg');
+        }
+
         .features {
           width: 100px;
           height: 50px;
-          background-image: url('../images/icon-arrow-down.svg');
+          background-image: url('../images/icon-arrow-up.svg');
           background-size: auto;
           background-position: 70px 4px;
           background-repeat: no-repeat;
@@ -79,10 +83,14 @@ body {
           }
         }
 
+        .company.active {
+          background-image: url('../images/icon-arrow-down.svg');
+        }
+
         .company {
           width: 100px;
           height: 50px;
-          background-image: url('../images/icon-arrow-down.svg');
+          background-image: url('../images/icon-arrow-up.svg');
           background-size: auto;
           background-position: 70px 4px;
           background-repeat: no-repeat;

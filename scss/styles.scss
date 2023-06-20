@@ -64,8 +64,12 @@ body {
           margin-bottom: 25px;
         }
 
-        #features {
+        #features.active {
           background-image: url('../images/icon-arrow-down.svg');
+        }
+
+        #features {
+          background-image: url('../images/icon-arrow-up.svg');
           background-size: auto;
           background-position: 90px 5px;
           background-repeat: no-repeat;
@@ -86,8 +90,12 @@ body {
           }
         }
 
-        #company {
+        #company.active {
           background-image: url('../images/icon-arrow-down.svg');
+        }
+
+        #company {
+          background-image: url('../images/icon-arrow-up.svg');
           background-size: auto;
           background-position: 90px 5px;
           background-repeat: no-repeat;
